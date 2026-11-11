@@ -7,37 +7,37 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 </p>
 
-ZenithHR is a modern, enterprise-grade Human Resource Management (HRM) and Payroll solution built on top of Laravel. It provides comprehensive capabilities for end-to-end workforce lifecycle administration, attendance tracking, leave request processing, automated payroll generation, and SMS activation.
+ZenithHR is a modern, enterprise-grade Human Resource Management (HRM) and Payroll solution built on Laravel. It provides comprehensive capabilities for end-to-end workforce lifecycle administration, attendance tracking, leave request processing, automated payroll generation, and SMS activation.
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-### 1. 👥 Employee Lifecycle Management
-- **Automated Onboarding**: Rapid staff registration with role assignment (`Admin`, `Manager`, `Employee`).
-- **SMS Account Activation**: 6-digit OTP verification code sent via SMS/WhatsApp gateway for new employees.
-- **Offboarding & Archival**: Safe offboarding workflow preserving historical attendance and payroll audits.
+### 1. Employee Lifecycle Management
+- **Automated Onboarding**: Rapid staff registration with role assignment (`Admin`, `Employee`).
+- **SMS Account Activation**: One-time token verification link dispatched via SMS/WhatsApp gateway for new employees.
+- **Offboarding & Archival**: Safe offboarding workflow with immediate portal access revocation while preserving historical attendance and payroll audits.
 
-### 2. ⏱️ Real-Time Attendance & Geolocation Ready
+### 2. Real-Time Attendance & Geolocation Ready
 - **Punch Clock System**: Single-click punch-in and punch-out with duration and overtime calculations.
-- **Monthly Attendance Logs**: Comprehensive timesheets filtered by department, status (`Present`, `Late`, `Absent`, `Half-day`).
+- **Monthly Attendance Logs**: Comprehensive timesheets filtered by department, status (`Present`, `Late`, `HalfDay`).
 
-### 3. 📅 Leave Management Workflow
-- **Multi-Type Leaves**: Annual, Casual, Sick, and Unpaid leave allocations.
-- **Approval Engine**: Managers and Admins can review, approve, or reject requests with audit comments.
+### 3. Leave Management Workflow
+- **Multi-Type Leaves**: Annual, Casual, Sick, and Unpaid leave allocations with real-time balance tracking.
+- **Approval Engine**: Admins can review, approve, or reject requests with immediate status updates.
 
-### 4. 💰 Payroll & Salary Slips
-- **Automated Salary Calculation**: Base salary, allowances, deductions, and tax withholdings.
+### 4. Payroll & Salary Slips
+- **Automated Salary Calculation**: Base salary, allowances, statutory tax withholdings, and EOBI contributions.
 - **Disbursement Engine**: Single-click monthly salary disbursement with batch status updates.
-- **Printable Pay Slips**: Professional corporate salary slips ready for PDF export or thermal printing.
+- **Printable Pay Slips**: Professional corporate salary slips ready for PDF export or printing.
 
-### 5. 🏛️ SOLID Architecture & Clean Code
-- Built adhering to SOLID design principles with dedicated service layers and interfaces.
-- Includes interactive **SOLID Architecture Guide** inside the application dashboard.
+### 5. Enterprise Architecture & Clean Code
+- Built adhering to modular service layers, repository patterns, and clean code practices.
+- 100% automated feature test coverage ensuring high reliability.
 
 ---
 
-## 🚀 Quick Setup Guide
+## Quick Setup Guide
 
 ### Prerequisites
 - PHP 8.2 or higher
@@ -77,16 +77,27 @@ ZenithHR is a modern, enterprise-grade Human Resource Management (HRM) and Payro
 
 ---
 
-## 🔐 Default Credentials (Demo)
+## Default Credentials (Demo)
 
-| Role | Email | Password |
-|---|---|---|
-| **HR Administrator** | `admin@zenithhr.com` | `Admin@123` |
-| **Employee** | `employee@zenithhr.com` | `Employee@123` |
+| Role | Mobile / Email | Password | Persona |
+|---|---|---|---|
+| **HR Administrator** | `+92 300 0000000` / `admin@zenithhr.com` | `admin123` | Sara Khan (CHRO) |
+| **Full-Time Employee** | `+92 300 1234567` / `zayd@zenithhr.com` | `password123` | Zayd Ahmed (Principal Engineer) |
+| **Contractor** | `+92 321 9876543` / `fatima@zenithhr.com` | `password123` | Fatima Zahra (Lead Designer) |
+| **Offboarded / Inactive** | `+92 322 8899001` / `usman@zenithhr.com` | `password123` | Usman Ghani (Blocked Access Test) |
 
-*Quick login shortcuts are also available on the login page for effortless testing.*
+*1-Click fast login shortcuts are also available on the login page for effortless persona switching.*
 
 ---
 
-## 📄 License
+## Running Automated Tests
+
+To execute the automated test suite:
+```bash
+php artisan test
+```
+
+---
+
+## License
 This project is open-source under the [MIT License](LICENSE).

@@ -105,11 +105,11 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end shadow">
                         <li><h6 class="dropdown-header">Switch Logged-in Persona</h6></li>
-                        <li><a class="dropdown-item" href="{{ route('quick.login', 'admin') }}">👑 HR Admin (Sara Khan)</a></li>
-                        <li><a class="dropdown-item" href="{{ route('quick.login', 'zayd') }}">💼 Full-Time Eng (Zayd Ahmed)</a></li>
-                        <li><a class="dropdown-item" href="{{ route('quick.login', 'fatima') }}">🎨 Contract Designer (Fatima)</a></li>
+                        <li><a class="dropdown-item" href="{{ route('quick.login', 'admin') }}"><i class="fas fa-crown text-warning me-2"></i> HR Admin (Sara Khan)</a></li>
+                        <li><a class="dropdown-item" href="{{ route('quick.login', 'zayd') }}"><i class="fas fa-briefcase text-primary me-2"></i> Full-Time Eng (Zayd Ahmed)</a></li>
+                        <li><a class="dropdown-item" href="{{ route('quick.login', 'fatima') }}"><i class="fas fa-paint-brush text-info me-2"></i> Contract Designer (Fatima)</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-danger" href="{{ route('quick.login', 'inactive') }}">🚫 Usman Ghani (Deactivated Test)</a></li>
+                        <li><a class="dropdown-item text-danger" href="{{ route('quick.login', 'inactive') }}"><i class="fas fa-user-slash text-danger me-2"></i> Usman Ghani (Deactivated Test)</a></li>
                     </ul>
                 </div>
 
@@ -164,11 +164,6 @@
                     </a>
                     <a class="nav-link {{ request()->routeIs('payroll.*') ? 'active' : '' }}" href="{{ route('payroll.index') }}">
                         <i class="fas fa-file-invoice-dollar fa-fw"></i> Payroll &amp; Slips
-                    </a>
-
-                    <div class="sidebar-heading">Architecture</div>
-                    <a class="nav-link {{ request()->routeIs('solid.guide') ? 'active' : '' }}" href="{{ route('solid.guide') }}">
-                        <i class="fas fa-graduation-cap fa-fw text-warning"></i> SOLID Guide
                     </a>
                 </nav>
             </div>

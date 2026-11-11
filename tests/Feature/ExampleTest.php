@@ -14,6 +14,13 @@ class ExampleTest extends TestCase
     {
         $response = $this->get('/');
 
+        $response->assertRedirect('/login');
+    }
+
+    public function test_login_screen_renders_successfully(): void
+    {
+        $response = $this->get('/login');
+
         $response->assertStatus(200);
     }
 }

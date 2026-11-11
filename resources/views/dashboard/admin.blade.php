@@ -61,7 +61,7 @@
             <div class="d-flex align-items-center justify-content-between">
                 <div>
                     <div class="small fw-bold text-info text-uppercase mb-1">System Health</div>
-                    <div class="h5 mb-0 fw-bold text-success"><i class="fas fa-shield-alt me-1"></i> SOLID 100%</div>
+                    <div class="h5 mb-0 fw-bold text-success"><i class="fas fa-shield-alt me-1"></i> Operational (100%)</div>
                 </div>
                 <div class="rounded-circle bg-info-subtle text-info p-3">
                     <i class="fas fa-server fa-2x"></i>

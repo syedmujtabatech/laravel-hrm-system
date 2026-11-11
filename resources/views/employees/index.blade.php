@@ -74,7 +74,7 @@
                                 <img src="{{ $emp->avatar ?: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=256&q=80' }}" class="rounded-circle border" width="42" height="42" style="object-fit: cover;" />
                                 <div>
                                     <div class="fw-bold text-primary">{{ $emp->name }}</div>
-                                    <div class="small text-muted">{{ $emp->employee_code }} • {{ $emp->email }}</div>
+                                    <div class="small text-muted">{{ $emp->employee_code }} &bull; {{ $emp->email }}</div>
                                     <div class="small text-muted"><i class="fas fa-mobile-alt me-1"></i>{{ $emp->phone }}</div>
                                 </div>
                             </div>

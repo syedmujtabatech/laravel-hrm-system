@@ -32,7 +32,7 @@ Route::middleware(['auth', 'active'])->group(function () {
     Route::post('/leaves/apply', [LeaveController::class, 'store'])->name('leaves.apply');
     Route::get('/payroll', [PayrollController::class, 'index'])->name('payroll.index');
     Route::get('/payroll/slip/{payroll}', [PayrollController::class, 'slip'])->name('payroll.slip');
-    Route::get('/solid-guide', [SolidGuideController::class, 'index'])->name('solid.guide');
+    Route::redirect('/solid-guide', '/dashboard')->name('solid.guide');
 
     // Admin-Only Routes
     Route::middleware('admin')->group(function () {

@@ -14,7 +14,7 @@
                         <h3 class="fw-bold mb-0 text-dark">{{ $user->name }}</h3>
                         <span class="badge bg-success">Active Staff</span>
                     </div>
-                    <div class="text-primary fw-semibold">{{ $user->designation }} • {{ $user->department?->name }}</div>
+                    <div class="text-primary fw-semibold">{{ $user->designation }} &bull; {{ $user->department?->name }}</div>
                     <div class="small text-muted mt-1">
                         <span class="me-3"><i class="fas fa-id-badge me-1"></i> {{ $user->employee_code }}</span>
                         <span class="me-3"><i class="fas fa-mobile-alt me-1"></i> {{ $user->phone }}</span>

@@ -1,8 +1,4 @@
 @echo off
-title ZenithHR Global Enterprise - Live Cloudflare Launcher
-color 0E
-echo Starting ZenithHR Local Server on Port 8004...
-start "" /b php artisan serve --port=8004
-echo Starting Cloudflare Tunnel for ZenithHR...
-"C:\Users\Mujtaba Arshad\.gemini\antigravity\cloudflared.exe" tunnel --url http://127.0.0.1:8004
-pause
+title ZenithHR - Port 8011
+start /b "" "C:\xampp\php\php.exe" -S 127.0.0.1:8011 -t "D:\laravel-hrm-system\public"
+"C:\Users\Mujtaba Arshad\.gemini\antigravity\cloudflared.exe" tunnel --url http://127.0.0.1:8011

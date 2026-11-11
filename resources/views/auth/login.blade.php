@@ -67,16 +67,16 @@
                 </div>
                 <div class="d-flex flex-wrap gap-2 mb-2">
                     <a href="{{ route('quick.login', 'admin') }}" class="btn btn-sm btn-outline-danger fw-bold">
-                        👑 HR Admin (Sara Khan)
+                        <i class="fas fa-crown text-warning me-1"></i> HR Admin (Sara Khan)
                     </a>
                     <a href="{{ route('quick.login', 'zayd') }}" class="btn btn-sm btn-outline-primary fw-bold">
-                        💼 Zayd Ahmed (Employee ESS)
+                        <i class="fas fa-briefcase text-primary me-1"></i> Zayd Ahmed (Employee ESS)
                     </a>
                     <a href="{{ route('quick.login', 'fatima') }}" class="btn btn-sm btn-outline-info fw-bold">
-                        🎨 Fatima Zahra (Contractor ESS)
+                        <i class="fas fa-paint-brush text-info me-1"></i> Fatima Zahra (Contractor ESS)
                     </a>
                     <a href="{{ route('quick.login', 'inactive') }}" class="btn btn-sm btn-outline-secondary fw-bold text-danger border-danger">
-                        🚫 Usman Ghani (Offboarded / Inactive)
+                        <i class="fas fa-user-slash text-danger me-1"></i> Usman Ghani (Offboarded / Inactive)
                     </a>
                 </div>
                 <div class="small text-muted" style="font-size: 0.75rem;">
